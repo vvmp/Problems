@@ -1,4 +1,5 @@
 #include<stdio.h>
+#define N 9
 int main(){
     int couple[N]={1, 4, 7, 3, 2, 1, 4, 3,2};
     int pos[N];
@@ -11,6 +12,12 @@ int main(){
          count=count +2;
     }
   }
+}
+for(int k=0;k<count;k++){
+    if(pos[k] != k)
+    {
+        printf("%d",couple[k]);
+    }
 }
     return 0;
 }
